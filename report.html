@@ -13113,7 +13113,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">mkdir</span> ../data
@@ -13136,16 +13136,16 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>mkdir: cannot create directory ‘../data’: File exists
---2020-07-12 13:20:18--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+--2020-07-12 19:55:26--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 Resolving ai.stanford.edu (ai.stanford.edu)... 171.64.68.10
 Connecting to ai.stanford.edu (ai.stanford.edu)|171.64.68.10|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 84125825 (80M) [application/x-gzip]
 Saving to: ‘../data/aclImdb_v1.tar.gz’
 
-../data/aclImdb_v1. 100%[===================&gt;]  80.23M  22.9MB/s    in 5.0s    
+../data/aclImdb_v1. 100%[===================&gt;]  80.23M  11.4MB/s    in 7.2s    
 
-2020-07-12 13:20:23 (16.1 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
+2020-07-12 19:55:34 (11.1 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
 
 </pre>
 </div>
@@ -13165,7 +13165,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13205,7 +13205,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">read_imdb_data</span><span class="p">()</span>
@@ -13247,7 +13247,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
@@ -13276,7 +13276,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">prepare_imdb_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
@@ -13316,7 +13316,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">train_X</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
@@ -13337,7 +13337,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>I read some comments on the internet about this film like &#34;...harder then Hostel...&#34;, &#34;the camera never screens of when it&#39;s getting really brutal...&#34;. But none of them is true. The camera never screens of, because there is nothing to screen of. The same scene is repeated hundred and hundred times again. Women lies on a table, killer rapes women a few times, killer cuts women into pieces (you never see this during the whole film!). Police come and arrested him. Killer fools the jury. Film over. In Germany we would say :&#34;Viel Lärm um Nichts&#34;. All in all, one of the most boring films I ever see. Absolutely non-recommendable.
+<pre>I like the cast pretty much however the story sort of unfolds rather slowly. Danny Glover does a good job making you wonder if he&#39;s the bad guy. Meanwhile, the other characters are just part of the story. Dennis Quaid didn&#39;t have as much room in the story as he could have had. I thought the first scene was a bit over the top grim compared to how the story unfolded. I&#39;d watch it again though. I rated it a 5 (wish I could rate it a 5.5)
 0
 </pre>
 </div>
@@ -13357,7 +13357,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -13395,7 +13395,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply review_to_words to a review (train_X[100] or any other review)</span>
@@ -13418,7 +13418,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;read&#39;, &#39;comment&#39;, &#39;internet&#39;, &#39;film&#39;, &#39;like&#39;, &#39;harder&#39;, &#39;hostel&#39;, &#39;camera&#39;, &#39;never&#39;, &#39;screen&#39;, &#39;get&#39;, &#39;realli&#39;, &#39;brutal&#39;, &#39;none&#39;, &#39;true&#39;, &#39;camera&#39;, &#39;never&#39;, &#39;screen&#39;, &#39;noth&#39;, &#39;screen&#39;, &#39;scene&#39;, &#39;repeat&#39;, &#39;hundr&#39;, &#39;hundr&#39;, &#39;time&#39;, &#39;women&#39;, &#39;lie&#39;, &#39;tabl&#39;, &#39;killer&#39;, &#39;rape&#39;, &#39;women&#39;, &#39;time&#39;, &#39;killer&#39;, &#39;cut&#39;, &#39;women&#39;, &#39;piec&#39;, &#39;never&#39;, &#39;see&#39;, &#39;whole&#39;, &#39;film&#39;, &#39;polic&#39;, &#39;come&#39;, &#39;arrest&#39;, &#39;killer&#39;, &#39;fool&#39;, &#39;juri&#39;, &#39;film&#39;, &#39;germani&#39;, &#39;would&#39;, &#39;say&#39;, &#39;viel&#39;, &#39;l&#39;, &#39;rm&#39;, &#39;um&#39;, &#39;nicht&#39;, &#39;one&#39;, &#39;bore&#39;, &#39;film&#39;, &#39;ever&#39;, &#39;see&#39;, &#39;absolut&#39;, &#39;non&#39;, &#39;recommend&#39;]
+<pre>[&#39;like&#39;, &#39;cast&#39;, &#39;pretti&#39;, &#39;much&#39;, &#39;howev&#39;, &#39;stori&#39;, &#39;sort&#39;, &#39;unfold&#39;, &#39;rather&#39;, &#39;slowli&#39;, &#39;danni&#39;, &#39;glover&#39;, &#39;good&#39;, &#39;job&#39;, &#39;make&#39;, &#39;wonder&#39;, &#39;bad&#39;, &#39;guy&#39;, &#39;meanwhil&#39;, &#39;charact&#39;, &#39;part&#39;, &#39;stori&#39;, &#39;denni&#39;, &#39;quaid&#39;, &#39;much&#39;, &#39;room&#39;, &#39;stori&#39;, &#39;could&#39;, &#39;thought&#39;, &#39;first&#39;, &#39;scene&#39;, &#39;bit&#39;, &#39;top&#39;, &#39;grim&#39;, &#39;compar&#39;, &#39;stori&#39;, &#39;unfold&#39;, &#39;watch&#39;, &#39;though&#39;, &#39;rate&#39;, &#39;5&#39;, &#39;wish&#39;, &#39;could&#39;, &#39;rate&#39;, &#39;5&#39;, &#39;5&#39;]
 </pre>
 </div>
 </div>
@@ -13439,12 +13439,12 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<ol>
+<ul>
 <li><p>It also removes the most frequent words, named as stop words. These words are probably the most frequently used for every review therefore can cause bias for our trainning process. Removing them will help by reducing the bias and focusing on the words that actually matters for sentiment analysis.</p>
 </li>
 <li><p>It also converts the words to small letter so that difference in case doesnt not affect the training process.</p>
 </li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13459,7 +13459,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -13511,7 +13511,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preprocess data</span>
@@ -13532,7 +13532,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Read preprocessed data from cache file: preprocessed_data.pkl
+<pre>Wrote preprocessed data to cache file: preprocessed_data.pkl
 </pre>
 </div>
 </div>
@@ -13562,7 +13562,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13579,7 +13579,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
             <span class="k">if</span> <span class="ow">not</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">word_count</span><span class="p">:</span>
                 <span class="n">word_count</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
             <span class="n">word_count</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-    
+
     <span class="c1"># TODO: Sort the words found in `data` so that sorted_words[0] is the most frequently appearing word and</span>
     <span class="c1">#       sorted_words[-1] is the least frequently appearing word.</span>
     
@@ -13599,44 +13599,13 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_dict</span> <span class="o">=</span> <span class="n">build_dict</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">word_dict</span><span class="p">[</span><span class="s1">&#39;complet&#39;</span><span class="p">],</span> <span class="n">word_dict</span><span class="p">[</span><span class="s1">&#39;warn&#39;</span><span class="p">],</span> <span class="n">word_dict</span><span class="p">[</span><span class="s1">&#39;spoiler&#39;</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>146 779 573
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13652,15 +13621,14 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>  Most frequent words are: 'movi', 'film', 'one', 'like', 'time'
-They are mostly related to movie or film, so i think it makes sense.</p>
+<p><strong>Answer:</strong> Most frequent words are: 'movi', 'film', 'one', 'like', 'time' They are mostly related to movie or film, so i think it makes sense.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Use this space to determine the five most frequently appearing words in the training set.</span>
@@ -13668,7 +13636,6 @@ They are mostly related to movie or film, so i think it makes sense.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">key_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">word_dict</span><span class="p">[</span><span class="s1">&#39;movi&#39;</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">key_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">word_dict</span><span class="p">[</span><span class="s1">&#39;rapidli&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -13687,8 +13654,7 @@ They are mostly related to movie or film, so i think it makes sense.</p>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;movi&#39;, &#39;film&#39;, &#39;one&#39;, &#39;like&#39;, &#39;time&#39;, &#39;good&#39;, &#39;make&#39;, &#39;charact&#39;, &#39;get&#39;, &#39;see&#39;]
 2
-rapidli
-4999
+verg
 </pre>
 </div>
 </div>
@@ -13707,7 +13673,7 @@ rapidli
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="s1">&#39;../data/pytorch&#39;</span> <span class="c1"># The folder we will use for storing data</span>
@@ -13722,7 +13688,7 @@ rapidli
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;word_dict.pkl&#39;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -13744,7 +13710,7 @@ rapidli
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">500</span><span class="p">):</span>
@@ -13780,7 +13746,7 @@ rapidli
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_X_len</span> <span class="o">=</span> <span class="n">convert_and_pad_data</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">train_X</span><span class="p">)</span>
@@ -13823,20 +13789,20 @@ rapidli
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[ 779  573  734    1 2111    1   19  156  109 3331   56 3670 1434  915
-  304 1216 3331   81   20 3331   33 3331   14   10  113   37   38   38
-   37 3331   16    5   51 1672 1595  254  697 1589   37 1674    1   15
-   30   44 2968 3331  156  405   66    4   31    1  480   27   34   31
-  575 2653  166    7 1843 3331   47    1    1 4644   20    3   92  143
-    1  929 3331 3593 2749    1  126  310  166 1255 2888 2151  157   11
- 2089 3331   92    4    4   35  233 3331 1080 3998    1   88   92  305
-  986   64  776   44    3   88  305   81    3  795   64  776   44    1
-  428  396    1    1  378  305 2059 1486  170  887  378  904   54  597
-   16 1538  573  171   50   37    4    7   35   38    3   16  386   25
-  280   22 3331    9   75  622  475  280   22 3331    9   15  262  915
-  114  699 3714 3297  489   15  783  137 2203    7  466  162  162   15
- 2187 1528 4147  243   75 2700   56  385 1097 1005 1483  288  687  489
-    1 1182  243   49  128   75  537    1  573    0    0    0    0    0
+<pre>[   5   73  106   21  115   13  330 1854  173 1263 1444 2817    7  193
+    8  108   24   78 1876    9   63   13 2269 4411   21  525   13   36
+   99   28   18  124  271 2245  509   13 1854   12   74  210  403  426
+   36  210  403  403    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
     0    0    0    0    0    0    0    0    0    0    0    0    0    0
     0    0    0    0    0    0    0    0    0    0    0    0    0    0
     0    0    0    0    0    0    0    0    0    0    0    0    0    0
@@ -14152,11 +14118,11 @@ rapidli
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch: 1, BCELoss: 0.6952060580253601
-Epoch: 2, BCELoss: 0.6843584060668946
-Epoch: 3, BCELoss: 0.6748642325401306
-Epoch: 4, BCELoss: 0.6649608492851258
-Epoch: 5, BCELoss: 0.6538997650146484
+<pre>Epoch: 1, BCELoss: 0.6897536873817444
+Epoch: 2, BCELoss: 0.6792720675468444
+Epoch: 3, BCELoss: 0.6694780588150024
+Epoch: 4, BCELoss: 0.658286190032959
+Epoch: 5, BCELoss: 0.6442855596542358
 </pre>
 </div>
 </div>
@@ -14242,41 +14208,41 @@ Epoch: 5, BCELoss: 0.6538997650146484
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2020-07-12 13:25:09 Starting - Starting the training job...
-2020-07-12 13:25:11 Starting - Launching requested ML instances......
-2020-07-12 13:26:24 Starting - Preparing the instances for training.........
-2020-07-12 13:27:45 Downloading - Downloading input data...
-2020-07-12 13:28:21 Training - Downloading the training image..<span class="ansi-blue-fg">bash: cannot set terminal process group (-1): Inappropriate ioctl for device</span>
+<pre>2020-07-12 20:53:19 Starting - Starting the training job...
+2020-07-12 20:53:21 Starting - Launching requested ML instances......
+2020-07-12 20:54:36 Starting - Preparing the instances for training.........
+2020-07-12 20:55:54 Downloading - Downloading input data...
+2020-07-12 20:56:39 Training - Downloading the training image..<span class="ansi-blue-fg">bash: cannot set terminal process group (-1): Inappropriate ioctl for device</span>
 <span class="ansi-blue-fg">bash: no job control in this shell</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:52,799 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:52,826 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:55,885 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:56,189 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
+<span class="ansi-blue-fg">2020-07-12 20:57:03,778 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
+<span class="ansi-blue-fg">2020-07-12 20:57:03,803 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
+<span class="ansi-blue-fg">2020-07-12 20:57:05,220 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
+<span class="ansi-blue-fg">2020-07-12 20:57:05,483 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
 <span class="ansi-blue-fg">Generating setup.py</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:56,189 sagemaker-containers INFO     Generating setup.cfg</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:56,189 sagemaker-containers INFO     Generating MANIFEST.in</span>
-<span class="ansi-blue-fg">2020-07-12 13:28:56,189 sagemaker-containers INFO     Installing module with the following command:</span>
+<span class="ansi-blue-fg">2020-07-12 20:57:05,484 sagemaker-containers INFO     Generating setup.cfg</span>
+<span class="ansi-blue-fg">2020-07-12 20:57:05,484 sagemaker-containers INFO     Generating MANIFEST.in</span>
+<span class="ansi-blue-fg">2020-07-12 20:57:05,484 sagemaker-containers INFO     Installing module with the following command:</span>
 <span class="ansi-blue-fg">/usr/bin/python -m pip install -U . -r requirements.txt</span>
-
-2020-07-12 13:28:52 Training - Training image download completed. Training in progress.<span class="ansi-blue-fg">Processing /opt/ml/code</span>
+<span class="ansi-blue-fg">Processing /opt/ml/code</span>
 <span class="ansi-blue-fg">Collecting pandas (from -r requirements.txt (line 1))
   Downloading https://files.pythonhosted.org/packages/74/24/0cdbf8907e1e3bc5a8da03345c23cbed7044330bb8f73bb12e711a640a00/pandas-0.24.2-cp35-cp35m-manylinux1_x86_64.whl (10.0MB)</span>
-<span class="ansi-blue-fg">Collecting numpy (from -r requirements.txt (line 2))</span>
-<span class="ansi-blue-fg">  Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)</span>
-<span class="ansi-blue-fg">Collecting nltk (from -r requirements.txt (line 3))
+<span class="ansi-blue-fg">Collecting numpy (from -r requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)</span>
+
+2020-07-12 20:57:02 Training - Training image download completed. Training in progress.<span class="ansi-blue-fg">Collecting nltk (from -r requirements.txt (line 3))
   Downloading https://files.pythonhosted.org/packages/92/75/ce35194d8e3022203cca0d2f896dbb88689f9b3fce8e9f9cff942913519d/nltk-3.5.zip (1.4MB)</span>
 <span class="ansi-blue-fg">Collecting beautifulsoup4 (from -r requirements.txt (line 4))
   Downloading https://files.pythonhosted.org/packages/66/25/ff030e2437265616a1e9b25ccc864e0371a0bc3adb7c5a404fd661c6f4f6/beautifulsoup4-4.9.1-py3-none-any.whl (115kB)</span>
 <span class="ansi-blue-fg">Collecting html5lib (from -r requirements.txt (line 5))
   Downloading https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl (112kB)</span>
-<span class="ansi-blue-fg">Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas-&gt;-r requirements.txt (line 1)) (2.7.5)</span>
 <span class="ansi-blue-fg">Collecting pytz&gt;=2011k (from pandas-&gt;-r requirements.txt (line 1))
   Downloading https://files.pythonhosted.org/packages/4f/a4/879454d49688e2fad93e59d7d4efda580b783c745fd2ec2a3adf87b0808d/pytz-2020.1-py2.py3-none-any.whl (510kB)</span>
+<span class="ansi-blue-fg">Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas-&gt;-r requirements.txt (line 1)) (2.7.5)</span>
 <span class="ansi-blue-fg">Requirement already satisfied, skipping upgrade: click in /usr/local/lib/python3.5/dist-packages (from nltk-&gt;-r requirements.txt (line 3)) (7.0)</span>
-<span class="ansi-blue-fg">Collecting joblib (from nltk-&gt;-r requirements.txt (line 3))</span>
-<span class="ansi-blue-fg">  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)</span>
-<span class="ansi-blue-fg">Collecting regex (from nltk-&gt;-r requirements.txt (line 3))
-  Downloading https://files.pythonhosted.org/packages/b8/7b/01510a6229c2176425bda54d15fba05a4b3df169b87265b008480261d2f9/regex-2020.6.8.tar.gz (690kB)</span>
+<span class="ansi-blue-fg">Collecting joblib (from nltk-&gt;-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)</span>
+<span class="ansi-blue-fg">Collecting regex (from nltk-&gt;-r requirements.txt (line 3))</span>
+<span class="ansi-blue-fg">  Downloading https://files.pythonhosted.org/packages/b8/7b/01510a6229c2176425bda54d15fba05a4b3df169b87265b008480261d2f9/regex-2020.6.8.tar.gz (690kB)</span>
 <span class="ansi-blue-fg">Collecting tqdm (from nltk-&gt;-r requirements.txt (line 3))
   Downloading https://files.pythonhosted.org/packages/46/62/7663894f67ac5a41a0d8812d78d9d2a9404124051885af9d77dc526fb399/tqdm-4.47.0-py2.py3-none-any.whl (66kB)</span>
 <span class="ansi-blue-fg">Collecting soupsieve&gt;1.2 (from beautifulsoup4-&gt;-r requirements.txt (line 4))
@@ -14288,97 +14254,97 @@ Epoch: 5, BCELoss: 0.6538997650146484
   Running setup.py bdist_wheel for nltk: started</span>
 <span class="ansi-blue-fg">  Running setup.py bdist_wheel for nltk: finished with status &#39;done&#39;
   Stored in directory: /root/.cache/pip/wheels/ae/8c/3f/b1fe0ba04555b08b57ab52ab7f86023639a526d8bc8d384306
-  Running setup.py bdist_wheel for train: started
-  Running setup.py bdist_wheel for train: finished with status &#39;done&#39;
-  Stored in directory: /tmp/pip-ephem-wheel-cache-0d96zutc/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
+  Running setup.py bdist_wheel for train: started</span>
+<span class="ansi-blue-fg">  Running setup.py bdist_wheel for train: finished with status &#39;done&#39;
+  Stored in directory: /tmp/pip-ephem-wheel-cache-264inf_v/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
   Running setup.py bdist_wheel for regex: started</span>
 <span class="ansi-blue-fg">  Running setup.py bdist_wheel for regex: finished with status &#39;done&#39;
   Stored in directory: /root/.cache/pip/wheels/9c/e2/cf/246ad8c87bcdf3cba1ec95fa89bc205c9037aa8f4d2e26fdad</span>
 <span class="ansi-blue-fg">Successfully built nltk train regex</span>
-<span class="ansi-blue-fg">Installing collected packages: numpy, pytz, pandas, joblib, regex, tqdm, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
+<span class="ansi-blue-fg">Installing collected packages: pytz, numpy, pandas, joblib, regex, tqdm, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
   Found existing installation: numpy 1.15.4
     Uninstalling numpy-1.15.4:
       Successfully uninstalled numpy-1.15.4</span>
 <span class="ansi-blue-fg">Successfully installed beautifulsoup4-4.9.1 html5lib-1.1 joblib-0.14.1 nltk-3.5 numpy-1.18.5 pandas-0.24.2 pytz-2020.1 regex-2020.6.8 soupsieve-2.0.1 tqdm-4.47.0 train-1.0.0 webencodings-0.5.1</span>
 <span class="ansi-blue-fg">You are using pip version 18.1, however version 20.2b1 is available.</span>
 <span class="ansi-blue-fg">You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.</span>
-<span class="ansi-blue-fg">2020-07-12 13:29:19,968 sagemaker-containers INFO     Invoking user script
+<span class="ansi-blue-fg">2020-07-12 20:57:27,797 sagemaker-containers INFO     Invoking user script
 </span>
 <span class="ansi-blue-fg">Training Env:
 </span>
 <span class="ansi-blue-fg">{
-    &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
-    &#34;network_interface_name&#34;: &#34;eth0&#34;,
-    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
-    &#34;num_gpus&#34;: 1,
-    &#34;num_cpus&#34;: 4,
-    &#34;hyperparameters&#34;: {
-        &#34;hidden_dim&#34;: 200,
-        &#34;epochs&#34;: 10
-    },
-    &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
-    &#34;user_entry_point&#34;: &#34;train.py&#34;,
-    &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
-    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
-    &#34;current_host&#34;: &#34;algo-1&#34;,
     &#34;module_name&#34;: &#34;train&#34;,
-    &#34;channel_input_dirs&#34;: {
-        &#34;training&#34;: &#34;/opt/ml/input/data/training&#34;
-    },
+    &#34;module_dir&#34;: &#34;s3://sagemaker-us-east-1-626863290605/sagemaker-pytorch-2020-07-12-20-53-18-905/source/sourcedir.tar.gz&#34;,
+    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
+    &#34;log_level&#34;: 20,
+    &#34;network_interface_name&#34;: &#34;eth0&#34;,
+    &#34;additional_framework_parameters&#34;: {},
+    &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
     &#34;resource_config&#34;: {
         &#34;current_host&#34;: &#34;algo-1&#34;,
+        &#34;network_interface_name&#34;: &#34;eth0&#34;,
         &#34;hosts&#34;: [
             &#34;algo-1&#34;
-        ],
-        &#34;network_interface_name&#34;: &#34;eth0&#34;
+        ]
     },
-    &#34;job_name&#34;: &#34;sagemaker-pytorch-2020-07-12-13-25-08-931&#34;,
-    &#34;module_dir&#34;: &#34;s3://sagemaker-us-east-1-626863290605/sagemaker-pytorch-2020-07-12-13-25-08-931/source/sourcedir.tar.gz&#34;,
-    &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
-    &#34;log_level&#34;: 20,
     &#34;input_dir&#34;: &#34;/opt/ml/input&#34;,
-    &#34;hosts&#34;: [
-        &#34;algo-1&#34;
-    ],
     &#34;input_data_config&#34;: {
         &#34;training&#34;: {
-            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
             &#34;RecordWrapperType&#34;: &#34;None&#34;,
+            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
             &#34;TrainingInputMode&#34;: &#34;File&#34;
         }
     },
-    &#34;additional_framework_parameters&#34;: {}</span>
+    &#34;channel_input_dirs&#34;: {
+        &#34;training&#34;: &#34;/opt/ml/input/data/training&#34;
+    },
+    &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
+    &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
+    &#34;num_gpus&#34;: 1,
+    &#34;hosts&#34;: [
+        &#34;algo-1&#34;
+    ],
+    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
+    &#34;user_entry_point&#34;: &#34;train.py&#34;,
+    &#34;hyperparameters&#34;: {
+        &#34;epochs&#34;: 10,
+        &#34;hidden_dim&#34;: 200
+    },
+    &#34;current_host&#34;: &#34;algo-1&#34;,
+    &#34;num_cpus&#34;: 4,
+    &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
+    &#34;job_name&#34;: &#34;sagemaker-pytorch-2020-07-12-20-53-18-905&#34;</span>
 <span class="ansi-blue-fg">}
 </span>
 <span class="ansi-blue-fg">Environment variables:
 </span>
-<span class="ansi-blue-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;10&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]</span>
-<span class="ansi-blue-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
-<span class="ansi-blue-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
-<span class="ansi-blue-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
-<span class="ansi-blue-fg">SM_LOG_LEVEL=20</span>
-<span class="ansi-blue-fg">SM_NUM_GPUS=1</span>
-<span class="ansi-blue-fg">SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main</span>
-<span class="ansi-blue-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
-<span class="ansi-blue-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;}</span>
-<span class="ansi-blue-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2020-07-12-13-25-08-931&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-us-east-1-626863290605/sagemaker-pytorch-2020-07-12-13-25-08-931/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;eth0&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
-<span class="ansi-blue-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
-<span class="ansi-blue-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
-<span class="ansi-blue-fg">SM_NETWORK_INTERFACE_NAME=eth0</span>
-<span class="ansi-blue-fg">SM_INPUT_DIR=/opt/ml/input</span>
 <span class="ansi-blue-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
-<span class="ansi-blue-fg">SM_MODEL_DIR=/opt/ml/model</span>
-<span class="ansi-blue-fg">SM_FRAMEWORK_PARAMS={}</span>
-<span class="ansi-blue-fg">SM_CURRENT_HOST=algo-1</span>
-<span class="ansi-blue-fg">SM_USER_ENTRY_POINT=train.py</span>
-<span class="ansi-blue-fg">SM_CHANNELS=[&#34;training&#34;]</span>
+<span class="ansi-blue-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
+<span class="ansi-blue-fg">SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main</span>
 <span class="ansi-blue-fg">SM_MODULE_NAME=train</span>
-<span class="ansi-blue-fg">SM_NUM_CPUS=4</span>
-<span class="ansi-blue-fg">SM_HPS={&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200}</span>
-<span class="ansi-blue-fg">SM_MODULE_DIR=s3://sagemaker-us-east-1-626863290605/sagemaker-pytorch-2020-07-12-13-25-08-931/source/sourcedir.tar.gz</span>
+<span class="ansi-blue-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
+<span class="ansi-blue-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;}</span>
 <span class="ansi-blue-fg">SM_INPUT_CONFIG_DIR=/opt/ml/input/config</span>
+<span class="ansi-blue-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;10&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]</span>
+<span class="ansi-blue-fg">SM_NUM_CPUS=4</span>
+<span class="ansi-blue-fg">SM_INPUT_DIR=/opt/ml/input</span>
+<span class="ansi-blue-fg">SM_MODULE_DIR=s3://sagemaker-us-east-1-626863290605/sagemaker-pytorch-2020-07-12-20-53-18-905/source/sourcedir.tar.gz</span>
+<span class="ansi-blue-fg">SM_FRAMEWORK_PARAMS={}</span>
+<span class="ansi-blue-fg">SM_MODEL_DIR=/opt/ml/model</span>
+<span class="ansi-blue-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
+<span class="ansi-blue-fg">SM_CHANNELS=[&#34;training&#34;]</span>
 <span class="ansi-blue-fg">SM_HP_EPOCHS=10</span>
-<span class="ansi-blue-fg">SM_HP_HIDDEN_DIM=200
+<span class="ansi-blue-fg">SM_HP_HIDDEN_DIM=200</span>
+<span class="ansi-blue-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
+<span class="ansi-blue-fg">SM_CURRENT_HOST=algo-1</span>
+<span class="ansi-blue-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
+<span class="ansi-blue-fg">SM_NUM_GPUS=1</span>
+<span class="ansi-blue-fg">SM_HPS={&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200}</span>
+<span class="ansi-blue-fg">SM_USER_ENTRY_POINT=train.py</span>
+<span class="ansi-blue-fg">SM_LOG_LEVEL=20</span>
+<span class="ansi-blue-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2020-07-12-20-53-18-905&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-us-east-1-626863290605/sagemaker-pytorch-2020-07-12-20-53-18-905/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;eth0&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
+<span class="ansi-blue-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
+<span class="ansi-blue-fg">SM_NETWORK_INTERFACE_NAME=eth0
 </span>
 <span class="ansi-blue-fg">Invoking script with the following command:
 </span>
@@ -14388,22 +14354,22 @@ Epoch: 5, BCELoss: 0.6538997650146484
 <span class="ansi-blue-fg">Using device cuda.</span>
 <span class="ansi-blue-fg">Get train data loader.</span>
 <span class="ansi-blue-fg">Model loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000.</span>
-<span class="ansi-blue-fg">Epoch: 1, BCELoss: 0.6691938127790179</span>
-<span class="ansi-blue-fg">Epoch: 2, BCELoss: 0.6123390793800354</span>
-<span class="ansi-blue-fg">Epoch: 3, BCELoss: 0.4963593677598603</span>
-<span class="ansi-blue-fg">Epoch: 4, BCELoss: 0.4205119378712712</span>
-<span class="ansi-blue-fg">Epoch: 5, BCELoss: 0.3801010500411598</span>
-<span class="ansi-blue-fg">Epoch: 6, BCELoss: 0.4046222902074152</span>
-<span class="ansi-blue-fg">Epoch: 7, BCELoss: 0.3466773221687395</span>
-<span class="ansi-blue-fg">Epoch: 8, BCELoss: 0.31075094761897104</span>
-<span class="ansi-blue-fg">Epoch: 9, BCELoss: 0.2985482538232998</span>
-<span class="ansi-blue-fg">Epoch: 10, BCELoss: 0.28404893802136794</span>
-<span class="ansi-blue-fg">2020-07-12 13:32:25,225 sagemaker-containers INFO     Reporting training SUCCESS</span>
+<span class="ansi-blue-fg">Epoch: 1, BCELoss: 0.671313437880302</span>
+<span class="ansi-blue-fg">Epoch: 2, BCELoss: 0.6043906820063688</span>
+<span class="ansi-blue-fg">Epoch: 3, BCELoss: 0.5466112920216152</span>
+<span class="ansi-blue-fg">Epoch: 4, BCELoss: 0.47651951106227175</span>
+<span class="ansi-blue-fg">Epoch: 5, BCELoss: 0.4298939382543369</span>
+<span class="ansi-blue-fg">Epoch: 6, BCELoss: 0.3802709920065744</span>
+<span class="ansi-blue-fg">Epoch: 7, BCELoss: 0.3667292953753958</span>
+<span class="ansi-blue-fg">Epoch: 8, BCELoss: 0.35046132912441175</span>
+<span class="ansi-blue-fg">Epoch: 9, BCELoss: 0.316839802021883</span>
+<span class="ansi-blue-fg">Epoch: 10, BCELoss: 0.294956272962142</span>
+<span class="ansi-blue-fg">2020-07-12 21:00:34,279 sagemaker-containers INFO     Reporting training SUCCESS</span>
 
-2020-07-12 13:32:37 Uploading - Uploading generated training model
-2020-07-12 13:32:37 Completed - Training job completed
-Training seconds: 292
-Billable seconds: 292
+2020-07-12 21:00:43 Uploading - Uploading generated training model
+2020-07-12 21:00:43 Completed - Training job completed
+Training seconds: 289
+Billable seconds: 289
 </pre>
 </div>
 </div>
@@ -14462,7 +14428,7 @@ Billable seconds: 292
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>---------------!</pre>
+<pre>-----------------!</pre>
 </div>
 </div>
 
@@ -14525,71 +14491,10 @@ Billable seconds: 292
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModelError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-33-46108efe51ea&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>predictions <span class="ansi-blue-fg">=</span> predict<span class="ansi-blue-fg">(</span>test_X<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> predictions <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span>round<span class="ansi-blue-fg">(</span>num<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> num <span class="ansi-green-fg">in</span> predictions<span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-32-215b27c43941&gt;</span> in <span class="ansi-cyan-fg">predict</span><span class="ansi-blue-fg">(data, rows)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span>     predictions <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>array<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>     <span class="ansi-green-fg">for</span> array <span class="ansi-green-fg">in</span> split_array<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg">         </span>predictions <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>predictions<span class="ansi-blue-fg">,</span> predictor<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">(</span>array<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> 
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     <span class="ansi-green-fg">return</span> predictions
-
-<span class="ansi-green-fg">~/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/sagemaker/predictor.py</span> in <span class="ansi-cyan-fg">predict</span><span class="ansi-blue-fg">(self, data, initial_args, target_model, target_variant)</span>
-<span class="ansi-green-intense-fg ansi-bold">    111</span> 
-<span class="ansi-green-intense-fg ansi-bold">    112</span>         request_args <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_create_request_args<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">,</span> initial_args<span class="ansi-blue-fg">,</span> target_model<span class="ansi-blue-fg">,</span> target_variant<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 113</span><span class="ansi-red-fg">         </span>response <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>sagemaker_session<span class="ansi-blue-fg">.</span>sagemaker_runtime_client<span class="ansi-blue-fg">.</span>invoke_endpoint<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span>request_args<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    114</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_handle_response<span class="ansi-blue-fg">(</span>response<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    115</span> 
-
-<span class="ansi-green-fg">~/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/botocore/client.py</span> in <span class="ansi-cyan-fg">_api_call</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    314</span>                     &#34;%s() only accepts keyword arguments.&#34; % py_operation_name)
-<span class="ansi-green-intense-fg ansi-bold">    315</span>             <span class="ansi-red-fg"># The &#34;self&#34; in this scope is referring to the BaseClient.</span>
-<span class="ansi-green-fg">--&gt; 316</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_make_api_call<span class="ansi-blue-fg">(</span>operation_name<span class="ansi-blue-fg">,</span> kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    317</span> 
-<span class="ansi-green-intense-fg ansi-bold">    318</span>         _api_call<span class="ansi-blue-fg">.</span>__name__ <span class="ansi-blue-fg">=</span> str<span class="ansi-blue-fg">(</span>py_operation_name<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/botocore/client.py</span> in <span class="ansi-cyan-fg">_make_api_call</span><span class="ansi-blue-fg">(self, operation_name, api_params)</span>
-<span class="ansi-green-intense-fg ansi-bold">    633</span>             error_code <span class="ansi-blue-fg">=</span> parsed_response<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Error&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Code&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    634</span>             error_class <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>exceptions<span class="ansi-blue-fg">.</span>from_code<span class="ansi-blue-fg">(</span>error_code<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 635</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> error_class<span class="ansi-blue-fg">(</span>parsed_response<span class="ansi-blue-fg">,</span> operation_name<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    636</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    637</span>             <span class="ansi-green-fg">return</span> parsed_response
-
-<span class="ansi-red-fg">ModelError</span>: An error occurred (ModelError) when calling the InvokeEndpoint operation: Received server error (500) from model with message &#34;&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Internal Server Error&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;&lt;p&gt;Internal Server Error&lt;/p&gt;&lt;/h1&gt;
-    
-  &lt;/body&gt;
-&lt;/html&gt;
-&#34;. See https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#logEventViewer:group=/aws/sagemaker/Endpoints/sagemaker-pytorch-2020-07-12-13-25-08-931 in account 626863290605 for more information.</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
@@ -14597,6 +14502,26 @@ Billable seconds: 292
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[34]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.85208</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14612,13 +14537,13 @@ Billable seconds: 292
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>
-Previous xgboost models has predicted around 86% whereas this one predicts 85% so I it looks like the XGBoost model performed a little better than this one.</p>
+<p><strong>Answer:</strong></p>
+<p>Previous xgboost models has predicted around 86% whereas this one predicts 85% so I it looks like the XGBoost model performed a little better than this one.</p>
 <p>There are several reasons of performing differently, couple of them that I can think of now</p>
 <ul>
 <li>Use of bag of word for xgboost vs use of embedding vector in LSTM.</li>
-<li>Weight initializations.</li>
-<li>LSTM is probably much better for generating text rather than sentiment analysis.</li>
+<li>Increase the embedding dimension, hidden dimension may help.</li>
+<li>LSTM is probably much better for generating text rather than classifying a paragraph.</li>
 </ul>
 <p>As per the evidence I have here, it looks like XGBoost is better for sentiment analysis. However, the performance difference is too small to come to a concrete conclusion.</p>
 
@@ -14635,7 +14560,7 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_review</span> <span class="o">=</span> <span class="s1">&#39;The simplest pleasures in life are the best, and this film is one of them. Combining a rather basic storyline of love and adventure this movie transcends the usual weekend fair with wit and unmitigated charm.&#39;</span>
@@ -14663,11 +14588,11 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Convert test_review into a form usable by the model and save the results in test_data</span>
-
+<span class="n">test_data</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">test_review_words</span> <span class="o">=</span> <span class="n">review_to_words</span><span class="p">(</span><span class="n">test_review</span><span class="p">)</span>
 <span class="n">test_data</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">test_review_words</span><span class="p">)</span>
 <span class="n">test_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">test_data</span><span class="p">)]</span>
@@ -14688,13 +14613,33 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[37]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array(0.74476916, dtype=float32)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14717,14 +14662,31 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># estimator.delete_endpoint()</span>
-<span class="n">predictor</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>WARNING:root:estimator.delete_endpoint() will be deprecated in SageMaker Python SDK v2. Please use the delete_endpoint() function on your predictor instead.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14750,13 +14712,127 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pygmentize serve/predict.py
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">argparse</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">json</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">os</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">pickle</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">sys</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">sagemaker_containers</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">pandas</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">pd</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">numpy</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">np</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch</span><span class="ansi-cyan-fg ansi-underline">.</span><span class="ansi-cyan-fg ansi-underline">nn</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">nn</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch</span><span class="ansi-cyan-fg ansi-underline">.</span><span class="ansi-cyan-fg ansi-underline">optim</span> <span class="ansi-blue-fg">as</span> <span class="ansi-cyan-fg ansi-underline">optim</span>
+<span class="ansi-blue-fg">import</span> <span class="ansi-cyan-fg ansi-underline">torch</span><span class="ansi-cyan-fg ansi-underline">.</span><span class="ansi-cyan-fg ansi-underline">utils</span><span class="ansi-cyan-fg ansi-underline">.</span><span class="ansi-cyan-fg ansi-underline">data</span>
+
+<span class="ansi-blue-fg">from</span> <span class="ansi-cyan-fg ansi-underline">model</span> <span class="ansi-blue-fg">import</span> LSTMClassifier
+
+<span class="ansi-blue-fg">from</span> <span class="ansi-cyan-fg ansi-underline">utils</span> <span class="ansi-blue-fg">import</span> review_to_words, convert_and_pad
+
+<span class="ansi-blue-fg">def</span> <span class="ansi-green-fg">model_fn</span>(model_dir):
+    <span class="ansi-yellow-fg">&#34;&#34;&#34;Load the PyTorch model from the `model_dir` directory.&#34;&#34;&#34;</span>
+    <span class="ansi-cyan-fg">print</span>(<span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">Loading model.</span><span class="ansi-yellow-fg">&#34;</span>)
+
+    <span class="ansi-white-fg"># First, load the parameters used to create the model.</span>
+    model_info = {}
+    model_info_path = os.path.join(model_dir, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">model_info.pth</span><span class="ansi-yellow-fg">&#39;</span>)
+    <span class="ansi-blue-fg">with</span> <span class="ansi-cyan-fg">open</span>(model_info_path, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">rb</span><span class="ansi-yellow-fg">&#39;</span>) <span class="ansi-blue-fg">as</span> f:
+        model_info = torch.load(f)
+
+    <span class="ansi-cyan-fg">print</span>(<span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">model_info: </span><span class="ansi-yellow-fg">{}</span><span class="ansi-yellow-fg">&#34;</span>.format(model_info))
+
+    <span class="ansi-white-fg"># Determine the device and construct the model.</span>
+    device = torch.device(<span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">cuda</span><span class="ansi-yellow-fg">&#34;</span> <span class="ansi-blue-fg">if</span> torch.cuda.is_available() <span class="ansi-blue-fg">else</span> <span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">cpu</span><span class="ansi-yellow-fg">&#34;</span>)
+    model = LSTMClassifier(model_info[<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">embedding_dim</span><span class="ansi-yellow-fg">&#39;</span>], model_info[<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">hidden_dim</span><span class="ansi-yellow-fg">&#39;</span>], model_info[<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">vocab_size</span><span class="ansi-yellow-fg">&#39;</span>])
+
+    <span class="ansi-white-fg"># Load the store model parameters.</span>
+    model_path = os.path.join(model_dir, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">model.pth</span><span class="ansi-yellow-fg">&#39;</span>)
+    <span class="ansi-blue-fg">with</span> <span class="ansi-cyan-fg">open</span>(model_path, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">rb</span><span class="ansi-yellow-fg">&#39;</span>) <span class="ansi-blue-fg">as</span> f:
+        model.load_state_dict(torch.load(f))
+
+    <span class="ansi-white-fg"># Load the saved word_dict.</span>
+    word_dict_path = os.path.join(model_dir, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">word_dict.pkl</span><span class="ansi-yellow-fg">&#39;</span>)
+    <span class="ansi-blue-fg">with</span> <span class="ansi-cyan-fg">open</span>(word_dict_path, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">rb</span><span class="ansi-yellow-fg">&#39;</span>) <span class="ansi-blue-fg">as</span> f:
+        model.word_dict = pickle.load(f)
+
+    model.to(device).eval()
+
+    <span class="ansi-cyan-fg">print</span>(<span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">Done loading model.</span><span class="ansi-yellow-fg">&#34;</span>)
+    <span class="ansi-blue-fg">return</span> model
+
+<span class="ansi-blue-fg">def</span> <span class="ansi-green-fg">input_fn</span>(serialized_input_data, content_type):
+    <span class="ansi-cyan-fg">print</span>(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Deserializing the input data.</span><span class="ansi-yellow-fg">&#39;</span>)
+    <span class="ansi-blue-fg">if</span> content_type == <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">text/plain</span><span class="ansi-yellow-fg">&#39;</span>:
+        data = serialized_input_data.decode(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">utf-8</span><span class="ansi-yellow-fg">&#39;</span>)
+        <span class="ansi-blue-fg">return</span> data
+    <span class="ansi-blue-fg">raise</span> <span class="ansi-cyan-fg">Exception</span>(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Requested unsupported ContentType in content_type: </span><span class="ansi-yellow-fg">&#39;</span> + content_type)
+
+<span class="ansi-blue-fg">def</span> <span class="ansi-green-fg">output_fn</span>(prediction_output, accept):
+    <span class="ansi-cyan-fg">print</span>(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Serializing the generated output.</span><span class="ansi-yellow-fg">&#39;</span>)
+    <span class="ansi-blue-fg">return</span> <span class="ansi-cyan-fg">str</span>(prediction_output)
+
+<span class="ansi-blue-fg">def</span> <span class="ansi-green-fg">predict_fn</span>(input_data, model):
+    <span class="ansi-cyan-fg">print</span>(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Inferring sentiment of input data.</span><span class="ansi-yellow-fg">&#39;</span>)
+
+    device = torch.device(<span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">cuda</span><span class="ansi-yellow-fg">&#34;</span> <span class="ansi-blue-fg">if</span> torch.cuda.is_available() <span class="ansi-blue-fg">else</span> <span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">cpu</span><span class="ansi-yellow-fg">&#34;</span>)
+    
+    <span class="ansi-blue-fg">if</span> model.word_dict <span class="ansi-magenta-fg">is</span> <span class="ansi-blue-fg">None</span>:
+        <span class="ansi-blue-fg">raise</span> <span class="ansi-cyan-fg">Exception</span>(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Model has not been loaded properly, no word_dict.</span><span class="ansi-yellow-fg">&#39;</span>)
+    
+    <span class="ansi-white-fg"># TODO: Process input_data so that it is ready to be sent to our model.</span>
+    <span class="ansi-white-fg">#       You should produce two variables:</span>
+    <span class="ansi-white-fg">#         data_X   - A sequence of length 500 which represents the converted review</span>
+    <span class="ansi-white-fg">#         data_len - The length of the review</span>
+
+    input_words = review_to_words(input_data)
+    data_X, data_len = convert_and_pad(model.word_dict, input_words)
+
+    <span class="ansi-white-fg"># Using data_X and data_len we construct an appropriate input tensor. Remember</span>
+    <span class="ansi-white-fg"># that our model expects input data of the form &#39;len, review[500]&#39;.</span>
+    data_pack = np.hstack((data_len, data_X))
+    data_pack = data_pack.reshape(<span class="ansi-blue-fg">1</span>, -<span class="ansi-blue-fg">1</span>)
+    
+    data = torch.from_numpy(data_pack)
+    data = data.to(device)
+
+    <span class="ansi-white-fg"># Make sure to put the model into evaluation mode</span>
+    model.eval()
+
+    <span class="ansi-white-fg"># TODO: Compute the result of applying the model to the input data. The variable `result` should</span>
+    <span class="ansi-white-fg">#       be a numpy array which contains a single integer which is either 1 or 0</span>
+
+    result = <span class="ansi-blue-fg">None</span>
+    
+    <span class="ansi-blue-fg">with</span> torch.no_grad():
+        out = model.forward(data)
+    
+    result = np.round(out.numpy())
+
+    <span class="ansi-blue-fg">return</span> result
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14781,7 +14857,7 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sagemaker.predictor</span> <span class="kn">import</span> <span class="n">RealTimePredictor</span>
@@ -14804,6 +14880,35 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>WARNING:sagemaker:Parameter image will be renamed to image_uri in SageMaker Python SDK v2.
+WARNING:sagemaker:&#39;create_image_uri&#39; will be deprecated in favor of &#39;ImageURIProvider&#39; class in SageMaker Python SDK v2.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>---------------!</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14815,7 +14920,7 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
@@ -14864,7 +14969,7 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ground</span><span class="p">,</span> <span class="n">results</span> <span class="o">=</span> <span class="n">test_reviews</span><span class="p">()</span>
@@ -14874,23 +14979,29 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Starting  pos  files
+Starting  neg  files
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;0.0&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
@@ -14898,6 +15009,26 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[46]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.83</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14912,13 +15043,33 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_review</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[47]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>b&#39;1.0&#39;</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14979,7 +15130,7 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">endpoint</span>
@@ -14995,13 +15146,13 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;sagemaker-pytorch-2020-07-11-03-23-06-026&#39;</pre>
+<pre>&#39;sagemaker-pytorch-2020-07-12-21-23-53-798&#39;</pre>
 </div>
 
 </div>
@@ -15054,6 +15205,19 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>Prediction: <strong>Positive</strong>. Review rating: 1/10</p>
+
+<pre><code>Season 2 review A mass of ridiculous confusion. The double, triple and quadruple paradoxes are only out done by the gibberish philosophy spewed by the narrator. He goes on and on about beginnings and ends and ends of beginings and the middle of starts and the starts of middles and the beginnings of ends. The narrator who may, in fact, may be his own grandmother's brother's aunt's sister's cousin. Everyone is their own father or mother or mother's father. I'm not sure yet. I think they're saving that reveal for the end of the beginning. Or is that the begining of the middle. Anyway in season 2 time travel has expanded back and forward. It's a secret everybody in town knows about. But also the closely guarded secret of a super secret society. But meanwhile every teenager and housewife in town time travels. It's all part of "the plan". Or the beginning of the plan or maybe end of the planning stage of some of the beginnings. Anyhow the story now jumps around haphazardly to different times using the super secret caves (that everyone knows about) or a couple of time machines and one time blob that exists in the future. Soooo if anyone sets time straight half the town won't exist because they're their own father or grandfather (or mothers) and so the cycle starts again. For your convenience the cliff notes of this story have been printed on every shampoo bottle ..Shampoo Rinse Repeat</code></pre>
+<hr>
+<p>Prediction: <strong>Negative</strong>. Review rating 1/10 (Good job!).</p>
+
+<pre><code>... or is even remotely interesting.
+
+While Season One was OK, Season Two proved the law of diminishing returns with an increasingly convoluted plot and no significant new ideas. Season Three has become a dull, hyper-complex mess, where the characters mostly stare a) open mouthed or b) teary eyed (sometimes both!) at some 'revelation' or other in lieu of an actual plot or anything even remotely exciting or interesting. To distract from this narrative vacuum, a parallel world and even more time travel destinations, more characters, older/younger selves and parallel selves is introduced with the effect of creating an utterly boring and confusing shambles. The actors aren't given a chance to show their skill as they are only allowed to either utter some semi philosophical nonsense or revert to expressions a) and b) above. Sadly Ben Frost's soundtrack and the D.O.P. are wasted on this.</code></pre>
+<hr>
+<p>Prediction: <strong>Positive</strong>. Review rating 10/10 (Good job!)</p>
+
+<pre><code>This feedback is currently based on the first 10 episodes of season one (still watching the series as we speak), and to be honest it made me downgrade my rating for 'Stranger Things' quite a bit. It's clear that this series is the child of a genius - everything just works. The acting is great, the cinematography is great, the soundtrack is awesome (reminds me of Klaus Schulze at times), and the story-line is mind-boggling. This series is just miles above anything that leaves Hollywood. Wish that all productions could be like this. Thanks Netflix for bringing this awesome series to me screen. Say bye-bye to public television!</code></pre>
 
 </div>
 </div>
@@ -15068,7 +15232,7 @@ Previous xgboost models has predicted around 86% whereas this one predicts 85% s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
